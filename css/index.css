@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "block1 block2"
+        "block3 block2"
+        "block4 block5";
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    height: 600px;
+}
+
+.block1 {
+    grid-area: block1;
+    background-color: #cce5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.block-x {
+  margin-left: 20px;
+  background-color: #ffcccc;
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.block2 {
+    grid-area: block2;
+    background-color: #e2f0d9;
+    border: 2px solid #000;
+}
+
+.block3 {
+    grid-area: block3;
+    background-color: #ffffff;
+    border: 2px solid #000;
+}
+
+.block4 {
+    grid-area: block4;
+    background-color: #cce5ff;
+    display: flex;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.block-y {
+    margin-top: 10px;
+    background-color: #ccffcc;
+    padding: 10px;
+    border: 1px solid #000;
+    margin-left: 20px; /* Відступ між текстом і блоком y */
+    background-color: #ccffcc;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+.block5 {
+    grid-area: block5;
+    background-color: #ffe6cc;
+    border: 2px solid #000;
+}
+
+h1, h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+li a:hover {
+    color: #007bff;
+}
